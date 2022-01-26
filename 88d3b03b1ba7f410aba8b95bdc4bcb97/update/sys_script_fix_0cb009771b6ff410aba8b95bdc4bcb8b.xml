@@ -10,7 +10,7 @@ var grNZA = new GlideRecord('x_tdbf2_netwrk_dmz_zone_automation');
 grNZA.addQuery('active', 'true');
 grNZA.query();
 //grNZA.setLimit(1);
-
+//test gitHub and servicenow sync
 
 while (grNZA.next()) {
     var startIP = grNZA.start_ip;
