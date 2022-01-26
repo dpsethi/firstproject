@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="send_to_scheduled_job" label="Send To Scheduled Job" language="en" table="x_tdbf2_netwrk_dmz_zone_automation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>send_to_scheduled_job</element>
+            <help/>
+            <hint>If checked this record will be picked up by the nightly scheduled job, else, the record  can still be in the table but will not be  used in automation logic</hint>
+            <label>Send To Scheduled Job</label>
+            <language>en</language>
+            <name>x_tdbf2_netwrk_dmz_zone_automation</name>
+            <plural>Send To Scheduled Jobs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-19 17:21:59</sys_created_on>
+            <sys_id>eb16d267db3bbc10baab42c50596191b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Send To Scheduled Job</sys_name>
+            <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+            <sys_update_name>sys_documentation_x_tdbf2_netwrk_dmz_zone_automation_send_to_scheduled_job_en</sys_update_name>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 17:42:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

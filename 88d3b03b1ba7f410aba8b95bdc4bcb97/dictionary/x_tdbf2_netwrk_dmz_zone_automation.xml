@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Network Zone/DMZ Automation" max_length="40" name="x_tdbf2_netwrk_dmz_zone_automation" sizeclass="290" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" hint="Enter the host end IP, 3 digits max, eg; 254" label="Host End IP" mandatory="true" max_length="40" name="end_ip" type="string"/>
+        <element hint="Enter the first 3 octets of the IP subnet, with or without trailing dot (.)" label="IP Starts With" mandatory="true" max_length="40" name="ip_starts_with" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IP Subnet" mandatory="true" max_length="40" name="ip_subnet" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Network Sub Zone" max_length="40" name="network_sub_zone" type="choice">
+            <choice>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Application" language="fq" sequence="0" value="Application"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Application" sequence="0" value="Application"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Automation" language="fq" sequence="0" value="Automation"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Automation" sequence="0" value="Automation"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Internal" sequence="1" value="Internal"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Internal" language="fq" sequence="1" value="Internal"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Vendor" sequence="2" value="Vendor"/>
+                <element dependent_value="EdgeNet Zone" inactive_on_update="false" label="Vendor" language="fq" sequence="2" value="Vendor"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Network Zone" max_length="40" name="network_zone" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Core Services Zone" sequence="100" value="Core Services Zone"/>
+                <element inactive_on_update="false" label="Core Services Zone" language="fq" sequence="100" value="Core Services Zone"/>
+                <element inactive_on_update="false" label="Management Zone" language="fq" sequence="200" value="Management Zone"/>
+                <element inactive_on_update="false" label="Management Zone" sequence="200" value="Management Zone"/>
+                <element inactive_on_update="false" label="External Hosting DMZ" language="fq" sequence="300" value="External Hosting DMZ"/>
+                <element inactive_on_update="false" label="External Hosting DMZ" sequence="300" value="External Hosting DMZ"/>
+                <element inactive_on_update="false" label="Internal Hosting DMZ" language="fq" sequence="300" value="Internal Hosting DMZ"/>
+                <element inactive_on_update="false" label="Internal Hosting DMZ" sequence="300" value="Internal Hosting DMZ"/>
+                <element inactive_on_update="false" label="APP zone" sequence="400" value="APP zone"/>
+                <element inactive_on_update="false" label="APP zone" language="fq" sequence="400" value="APP zone"/>
+                <element inactive_on_update="false" label="Data Zone" language="fq" sequence="500" value="Data Zone"/>
+                <element inactive_on_update="false" label="Data Zone" sequence="500" value="Data Zone"/>
+                <element inactive_on_update="false" label="Sandbox" sequence="600" value="Sandbox"/>
+                <element inactive_on_update="false" label="Sandbox" language="fq" sequence="600" value="Sandbox"/>
+                <element inactive_on_update="false" label="RAS DMZ" language="fq" sequence="700" value="RAS DMZ"/>
+                <element inactive_on_update="false" label="RAS DMZ" sequence="700" value="RAS DMZ"/>
+                <element inactive_on_update="false" label="Extranet" language="fq" sequence="800" value="Extranet"/>
+                <element inactive_on_update="false" label="Extranet" sequence="800" value="Extranet"/>
+                <element inactive_on_update="false" label="Browsing DMZ" language="fq" sequence="900" value="Browsing DMZ"/>
+                <element inactive_on_update="false" label="Browsing DMZ" sequence="900" value="Browsing DMZ"/>
+                <element inactive_on_update="false" label="EdgeNet Zone" sequence="1000" value="EdgeNet Zone"/>
+                <element inactive_on_update="false" label="EdgeNet Zone" language="fq" sequence="1000" value="EdgeNet Zone"/>
+                <element inactive_on_update="false" label="Legacy" sequence="1000" value="Legacy"/>
+                <element inactive_on_update="false" label="Legacy" language="fq" sequence="1000" value="Legacy"/>
+            </choice>
+        </element>
+        <element label="Notes" max_length="4000" name="notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="If checked this record will be picked up by the nightly scheduled job, else, the record  can still be in the table but will not be  used in automation logic" label="Send To Scheduled Job" max_length="40" name="send_to_scheduled_job" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Host Start IP" mandatory="true" max_length="40" name="start_ip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subnet Mask" mandatory="true" max_length="40" name="subnet_mask" type="string"/>
+        <element label="Target URL" max_length="1024" name="target_url" read_only="true" type="url"/>
+        <element label="Total Server CIs" max_length="40" name="total_server_cis" read_only="true" type="string"/>
+        <index name="index">
+            <element name="ip_subnet"/>
+            <element name="ip_starts_with"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_server" version="2" view="RPT5ac1f77f1bf77050aba8b95bdc4bcb8a">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>host_name</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>52c1fbbf1bf77050aba8b95bdc4bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>serial_number</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>56c1fbbf1bf77050aba8b95bdc4bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_chassis_sub_type</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ac1fbbf1bf77050aba8b95bdc4bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_class_name</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ec1fbbf1bf77050aba8b95bdc4bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ip_address</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>52c1fbbf1bf77050aba8b95bdc4bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_ip_address_used_by_discovery</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>56c1fbbf1bf77050aba8b95bdc4bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_network_zone</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ac1fbbf1bf77050aba8b95bdc4bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_network_sub_zone</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ec1fbbf1bf77050aba8b95bdc4bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_server_classification</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>52c1fbbf1bf77050aba8b95bdc4bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>asset.install_status</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>56c1fbbf1bf77050aba8b95bdc4bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>asset.substatus</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ac1fbbf1bf77050aba8b95bdc4bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>hardware_status</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ec1fbbf1bf77050aba8b95bdc4bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>asset_tag</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>52c1fbbf1bf77050aba8b95bdc4bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>model_id</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>56c1fbbf1bf77050aba8b95bdc4bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>location</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ac1fbbf1bf77050aba8b95bdc4bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>os</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>5ec1fbbf1bf77050aba8b95bdc4bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>virtual</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="c5f1ef89070001106018f96d7c1ed082">d2c1fbbf1bf77050aba8b95bdc4bcbf4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_id>52c1fbbf1bf77050aba8b95bdc4bcbf9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_server</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-20 18:40:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d2c1fbbf1bf77050aba8b95bdc4bcbf4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_server</sys_name>
+            <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_server_RPT5ac1f77f1bf77050aba8b95bdc4bcb8a</sys_update_name>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-20 18:40:58</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt5ac1f77f1bf77050aba8b95bdc4bcb8a" name="RPT5ac1f77f1bf77050aba8b95bdc4bcb8a">c5f1ef89070001106018f96d7c1ed082</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

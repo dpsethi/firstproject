@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>NZA_Auto_Populate_DMZ_Data_Via_IP_Table</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[//read mapping information from NZA mapping table and update server CIs
+var grNZA = new GlideRecord('x_tdbf2_netwrk_dmz_zone_automation');
+//process all active records
+grNZA.addQuery('active', 'true');
+grNZA.query();
+
+while (grNZA.next()) {
+    var startIP = grNZA.start_ip;
+    var endIP = grNZA.end_ip;
+    var IPStartsWith = grNZA.ip_starts_with;
+    var nsz = '';
+    var nz = '';
+    //check if network zone is empty/none
+    if (grNZA.network_zone.nil()) {
+        nz = 'NULL';
+    } else {
+        nz = grNZA.network_zone;
+    }
+    //check if network sub-zone is empty/none	
+    if (grNZA.network_sub_zone.nil()) {
+        nsz = 'NULL';
+    } else {
+        nsz = grNZA.network_sub_zone;
+    }
+
+    //  gs.info('NZA - Network Zone/DMZ Automation Mapping Table Active records for ip StartsWith ' + IPStartsWith + '=> ' + grNZA.getRowCount());
+    // gs.info('NZA - Value in Network SubZone is : ' + grNZA.network_sub_zone + ' for number: ' + grNZA.number);
+    //get to server now to start processing each ip (between start_ip and end_ip)
+    var gr = new GlideRecord('cmdb_ci_ip_address');
+    var qc = gr.addQuery('ip_address', 'STARTSWITH', IPStartsWith);
+    qc.addOrCondition('u_ip_address_used_by_discovery', 'STARTSWITH', IPStartsWith);
+    gr.addQuery('nic.cmdb_ci.asset.install_status', '!=', 7); //exclude retired CIs
+    //ip_addressSTARTSWITH10.216.13^ORu_ip_address_used_by_discoverySTARTSWITH10.216.13^nic.cmdb_ci.asset.install_status!=7
+    gs.info('NZA - Encoded Query is' + gr.getEncodedQuery());
+    gr.query();
+    while (gr.next()) {
+        //gs.info('NZA - Encoded Query is' + gr.getEncodedQuery());
+        //gs.info('NZA - CMDB_CIs in IP address table for ip_address or u_ip_address_used_by_discovery StartsWith ' + IPStartsWith + '=> ' + gr.getRowCount());
+        var id = gr.nic.cmdb_ci;
+        var grServer = new GlideRecord('cmdb_ci_server');
+        grServer.addQuery('sys_id', 'STARTSWITH', id);
+		grServer.query();
+
+        if (!grServer.next()) {
+            gs.info('NZA - CI : ' + gr.nic.cmdb_ci.name + ' not found in server table');
+        } else {
+            gs.info('NZA - CI  ' + gr.nic.cmdb_ci.name + 'yayy got it!');
+            grServer.u_network_zone = nz;
+            grServer.update();
+        }
+
+        //gr.u_network_zone = nz;
+        //gr.u_network_sub_zone = nsz;
+        //gr.updateMultiple();
+        //update information on NZA table
+        grNZA.total_server_cis = gr.getRowCount();
+        grNZA.update();
+    }
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+        <sys_created_on>2021-11-18 16:42:05</sys_created_on>
+        <sys_id>9963899fdb333c10baab42c5059619c5</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>NZA_Auto_Populate_DMZ_Data_Via_IP_Table</sys_name>
+        <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+        <sys_update_name>sys_script_fix_9963899fdb333c10baab42c5059619c5</sys_update_name>
+        <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+        <sys_updated_on>2021-11-18 18:41:39</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

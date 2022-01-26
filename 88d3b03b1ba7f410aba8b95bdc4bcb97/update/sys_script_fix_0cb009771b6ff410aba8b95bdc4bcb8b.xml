@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>NZA_Auto_Populate_DMZ_Data_On_Servers</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[//read mapping information from NZA mapping table and update server CIs
+var grNZA = new GlideRecord('x_tdbf2_netwrk_dmz_zone_automation');
+//process all active records
+grNZA.addQuery('active', 'true');
+grNZA.query();
+//grNZA.setLimit(1);
+
+
+while (grNZA.next()) {
+    var startIP = grNZA.start_ip;
+    var endIP = grNZA.end_ip;
+    var IPStartsWith = grNZA.ip_starts_with;
+    var nsz = '';
+    if (grNZA.network_sub_zone == '') {
+        nsz = 'NULL';
+    } else {
+        nsz = grNZA.network_sub_zone;
+    }
+    gs.info('NZA - Network Zone/DMZ Automation Mapping Table Active records for ip StartsWith ' + IPStartsWith + '=> ' + grNZA.getRowCount());
+    gs.info('NZA - Value in Network SubZone is : ' + grNZA.network_sub_zone + ' for number: ' + grNZA.number);
+    //get to server now to start processing each ip (between start_ip and end_ip)
+    var gr = new GlideRecord('cmdb_ci_server');
+    gr.addQuery('ip_address', 'STARTSWITH', IPStartsWith);
+    gr.addQuery('asset.install_status', '!=', 7); //exclude retired CIs
+	//gr.addQuery().addOrCondition('asset.install_status','=',NULL);
+
+    //  gr.addEncodedQuery('ip_addressBETWEEN' + startIP + '@' + endIP + '^asset.install_status!=7^ORasset.install_status=NULL'); //exclude retired CI's
+    //ip_addressBETWEEN10.112.239.1@10.112.239.255^asset.install_status!=7^ORasset.install_status=NULL
+    gr.query();
+    //gr.next();
+    gs.info('NZA - CMDB_CI_SERVERS for ip StartsWith ' + IPStartsWith + '=> ' + gr.getRowCount());
+    //gr.next();
+    gr.u_network_zone = grNZA.network_zone;
+    gr.u_network_sub_zone = nsz;
+    gr.updateMultiple();
+	
+	//update information on NZA table
+	grNZA.total_server_cis = gr.getRowCount();
+	grNZA.update();
+	
+	
+
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+        <sys_created_on>2021-11-07 19:33:49</sys_created_on>
+        <sys_id>0cb009771b6ff410aba8b95bdc4bcb8b</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>NZA_Auto_Populate_DMZ_Data_On_Servers</sys_name>
+        <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+        <sys_update_name>sys_script_fix_0cb009771b6ff410aba8b95bdc4bcb8b</sys_update_name>
+        <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+        <sys_updated_on>2021-11-08 22:35:31</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

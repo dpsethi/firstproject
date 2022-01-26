@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>NZA_Auto_Populate_DMZ_IP_Range</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[//read mapping information from NZA mapping table and update server CIs
+var grNZA = new GlideRecord('x_tdbf2_netwrk_dmz_zone_automation');
+//process only scheduled job records
+grNZA.addQuery('send_to_scheduled_job', 'true'); //RunAs Scheduled job.
+grNZA.query();
+
+while (grNZA.next()) {
+    var startIP = grNZA.start_ip;
+    var endIP = grNZA.end_ip;
+    var IPStartsWith = grNZA.ip_starts_with;
+    //find if IPStartsWith has a dot at the end, if not then append it with a dot
+    if (IPStartsWith.endsWith('.')) {
+        gs.info('NZA - IPStartsWith field found with trailing dot - Valid entry; ' + IPStartsWith);
+    } else {
+		gs.info('NZA - IPStartsWith field invalid with no trailing dot;' + IPStartsWith + '; Fixing it now ==> ; ' + IPStartsWith + '.');
+        IPStartsWith = IPStartsWith + ".";
+    }
+    var nz = ''; //network_zone
+    var nsz = ''; //network_sub_zone
+
+    //check if network zone is empty/none
+    if (grNZA.network_zone.nil()) {
+        nz = 'NULL';
+    } else {
+        nz = grNZA.network_zone;
+    }
+    //check if network sub-zone is empty/none	
+    if (grNZA.network_sub_zone.nil()) {
+        nsz = 'NULL';
+    } else {
+        nsz = grNZA.network_sub_zone;
+    }
+    //generate array for isOneOf query
+    var ar = []; // initialize array
+    var iof = ''; //var to be used for isOneOf (IN) query
+    //start_ip should be in the format xxx.xxx.xxx without ending dot
+    //Note: BR--Validation, should handle this on the client/ui side
+
+    for (var i = startIP; i <= endIP; i++) {
+        ar[i] = IPStartsWith + i;
+    }
+
+	//prep array in csv format to be fed to isOneOf query
+    for (i = startIP; i < ar.length; i++) {
+       // gs.info('NZA - IP address is: ' + ar[i]);
+        iof = iof + ar[i] + ',';
+    }
+    gs.info('NZA - Array List for IPStartsWith;'+IPStartsWith+';for isOneOf query;' + iof);
+    //find all Servers, using IN query
+    var gr = new GlideRecord('cmdb_ci_server');
+    //ip_addressIN10112.239.1,10112.239.2,10112.239.3^ORu_ip_address_used_by_discoveryIN10112.239.1,10112.239.2,10112.239.3
+    gr.addEncodedQuery('ip_addressIN' + iof + '^ORu_ip_address_used_by_discoveryIN'+ iof +'^asset.install_status!=7^ORasset.install_status=NULL');
+    gr.query();
+    gs.info('NZA - using IP query (iof) IsOneOF - found servers in cmdb_ci_server: ' + gr.getRowCount());
+    //Next - update servers with details on NZA table
+    // update all cis with the new data for networkzone / network-sub-zone
+    gr.u_network_zone = nz;
+    gr.u_network_sub_zone = nsz;
+    gr.updateMultiple();
+	
+	grNZA.total_server_cis = gr.getRowCount();
+	grNZA.update();
+	
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+        <sys_created_on>2021-11-18 18:59:55</sys_created_on>
+        <sys_id>28f2e5dfdbf33c10baab42c5059619d2</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>NZA_Auto_Populate_DMZ_IP_Range</sys_name>
+        <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+        <sys_update_name>sys_script_fix_28f2e5dfdbf33c10baab42c5059619d2</sys_update_name>
+        <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:25:13</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

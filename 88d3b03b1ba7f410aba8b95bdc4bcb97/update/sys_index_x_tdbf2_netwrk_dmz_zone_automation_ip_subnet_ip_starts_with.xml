@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>ip_subnet,ip_starts_with</col_name_string>
+        <index_col_name>58153c771be7f410aba8b95bdc4bcbf7,e826c6801bf3f050aba8b95bdc4bcb73</index_col_name>
+        <logical_table_name>x_tdbf2_netwrk_dmz_zone_automation</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-11-08 21:35:26</sys_created_on>
+        <sys_id>4da622c01b337450ac9084c7624bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tdbf2_netwrk_dmz_zone_automation</sys_name>
+        <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+        <sys_update_name>sys_index_x_tdbf2_netwrk_dmz_zone_automation_ip_subnet_ip_starts_with</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-11-08 21:35:26</sys_updated_on>
+        <table display_value="Network Zone/DMZ Automation" name="x_tdbf2_netwrk_dmz_zone_automation">d8153c771be7f410aba8b95bdc4bcb9a</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

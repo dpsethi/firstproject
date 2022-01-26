@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="a9c838371b6bf410aba8b95bdc4bcb66" sys_domain="global" table="x_tdbf2_netwrk_dmz_zone_automation" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-07 18:56:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2dc87c371b6bf410aba8b95bdc4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tdbf2_netwrk_dmz_zone_automation" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">a9c838371b6bf410aba8b95bdc4bcb66</sys_ui_form>
+            <sys_ui_section caption="IP Network Information data" display_value="IP Network Information data" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">0fc734fb1b2bf410aba8b95bdc4bcb58</sys_ui_section>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-07 18:56:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-08 19:19:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b297ca8c1bf3f050aba8b95bdc4bcbc6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tdbf2_netwrk_dmz_zone_automation" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">a9c838371b6bf410aba8b95bdc4bcb66</sys_ui_form>
+            <sys_ui_section caption="Fields for Automation" display_value="Fields for Automation" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">7a97ca8c1bf3f050aba8b95bdc4bcbc2</sys_ui_section>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-08 19:19:50</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-07 18:56:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2dc87c371b6bf410aba8b95bdc4bcbcf</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tdbf2_netwrk_dmz_zone_automation" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">a9c838371b6bf410aba8b95bdc4bcb66</sys_ui_form>
+            <sys_ui_section caption="Data Push to Target" display_value="Data Push to Target" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">61c838371b6bf410aba8b95bdc4bcb65</sys_ui_section>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-08 19:19:50</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-08 21:17:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a82a24c1b733450aba8b95bdc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_tdbf2_netwrk_dmz_zone_automation" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">a9c838371b6bf410aba8b95bdc4bcb66</sys_ui_form>
+            <sys_ui_section caption="Information" display_value="Information" name="x_tdbf2_netwrk_dmz_zone_automation" sys_domain="global" view="Default view">1a82624c1b733450aba8b95bdc4bcbbb</sys_ui_section>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-08 21:17:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_tdbf2_netwrk_dmz_zone_automation</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>SETHID2-P3@TDBFG.com</sys_created_by>
+            <sys_created_on>2021-11-07 18:56:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a9c838371b6bf410aba8b95bdc4bcb66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tdbf2_netwrk_dmz_zone_automation</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Network Zone/DMZ Automation" source="x_tdbf2_netwrk_dmz">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Network Zone/DMZ Automation">88d3b03b1ba7f410aba8b95bdc4bcb97</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a9c838371b6bf410aba8b95bdc4bcb66</sys_update_name>
+            <sys_updated_by>SETHID2-P3@TDBFG.com</sys_updated_by>
+            <sys_updated_on>2021-11-07 18:56:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
